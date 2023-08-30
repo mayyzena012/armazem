@@ -16,7 +16,8 @@ if 'sim' in resposta:
     print(f'PROCESSANDO...')
     sleep(5)
     print('Parabens sua resposta esta correta e eu também te amo, amor')
-elif 'nao' and 'não' in resposta:
+else:
+    'nao' and 'não' in resposta
     print('VOCÊ É MALUCA?????')
     print(f'CUIDADO COM SUAS RESPOSTAS... E TOME')
     sleep(5)
