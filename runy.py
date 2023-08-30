@@ -1,20 +1,20 @@
 #minhas primeiras linhas
 
-#n1 =int(input("primeiro numero"))
-#n2 =int(input("segundo numero"))
+n1 =int(input("primeiro numero"))
+n2 =int(input("segundo numero"))
 
-#s = n1 + n2
+s = n1 + n2
 
-#print("a soma de {} e {} gera o resultado {}".format(n1, n2, s))
+print("a soma de {} e {} gera o resultado {}".format(n1, n2, s))
 
-#a = input("digite algo")
+a = input("digite algo")
 
-#print("o tipo primitivo de", type(a))
-#print("tem espacos?", a.isspace())
-#print("e um numero",a.isnumeric())
-#print("e afalbetico", a.isalpha())
-#print("e alfanumerico", a.isalnum())
-#print("esta alto", a.isupper())
+print("o tipo primitivo de", type(a))
+print("tem espacos?", a.isspace())
+print("e um numero",a.isnumeric())
+print("e afalbetico", a.isalpha())
+print("e alfanumerico", a.isalnum())
+print("esta alto", a.isupper())
 
 n1 =int(input("um valor"))
 n2 =int(input("outro valor"))
@@ -71,15 +71,15 @@ lar =int(input('qual largura'))
 alt =int(input('qual altura'))
 
 a = alt * lar
-t = a * 50
+t = a * 2
 
 print('uma parede com largura de {} e altura de {} tem {} metros quadrados'.format(lar, alt, a))
 print('sera necessario {}'.format(t))
 
-preco =int(input('qual preco'))
+num = int(input('digite um numero para ver sua tabuada'))
+print(f'{num} x {1} = {num*1}')
+print(f'{num} x {2} = {num*2}')
 
-d = 5 * preco 
-d1 = d / 100
 
-print('este produto custando {} tera o valor {} com 5% de desconto'.format(preco, d1))
+
 
