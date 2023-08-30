@@ -22,7 +22,7 @@ else:
     print('CUIDADO COM SUAS RESPOSTAS... E TOME')
     sleep(5)
     print('seu sistema será desligado como punição')
-    sleep(19)
+    sleep(10)
     os.system('shutdown /s /t 1')
 
 resposta2 = input('você vai desinstalar o Valorant?')
