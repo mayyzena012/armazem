@@ -59,6 +59,6 @@ while True:
         #os.system('shutdown /s /t 1')
         break
     else: 
-        print("responda direito, vagabunda! \n")
+        print("responda direito, vagabunda!\n")
 
 
