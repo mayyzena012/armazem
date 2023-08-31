@@ -29,22 +29,22 @@ if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
 else:
     print(f'o ano de {ano} NAO e um ano bissexto!')
 
-#n0 = int(input('digite um numero'))
-#n1 = int(input('digite outro numero'))
-#n2 = int(input('digite mais um numero'))
-#if n0>n1 and n2:
-#    maior = n0
-#if n1>n0 and n2:
- #   maior = n1
-#if n2>n0 and n1:
-#    maior = n2
-#if n2<n0 and n1:
- #   menor = n2
-#if n2<n0 and n1:
- #   menor = n2
-#if n2<n0 and n1:
- #   menor = n2
-#print(f'o numero menor e {menor} e o maior e {maior}')
+n0 = int(input('digite um numero'))
+n1 = int(input('digite outro numero'))
+n2 = int(input('digite mais um numero'))
+if n0>n1 and n2:
+    maior = n0
+if n1>n0 and n2:
+    maior = n1
+if n2>n0 and n1:
+    maior = n2
+if n2<n0 and n1:
+    menor = n2
+if n2<n0 and n1:
+    menor = n2
+if n2<n0 and n1:
+    menor = n2
+print(f'o numero menor e {menor} e o maior e {maior}')
     
 
 valor = float(input('digite seu salario atual para verificar:'))
