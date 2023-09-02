@@ -7,3 +7,10 @@ while r == 's':
     r = input('quer continuar? S/N?').lower()
 
 print('fim')
+
+
+def saudação(nome):
+    print('ola ' + nome +'!')
+
+
+saudação('juliano')
