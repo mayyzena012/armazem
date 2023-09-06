@@ -1,5 +1,12 @@
 #
-
+total = mil = 0
 while True:
-    nome = print('Nome do produto: ')
-    preco = print('Preco do produto: ')
+        nome = input('Nome do produto: ')
+        preco = float(input('Preco do produto: '))
+        c = input('voce quer continuar S/N? ').upper()
+
+        total += preco
+        print(total)
+        print(mil)
+        if preco > 1000:
+            mil += 1
