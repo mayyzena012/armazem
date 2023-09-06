@@ -7,22 +7,20 @@ while True:
     SEXO_MASCULINO = ('homem', 'm', 'masculino', 'h')
     SEXO_FEMININO = ('mulher', 'feminino', 'f')
     idade = int(input('Digite sua idade '))
-    while True:
-        sexo = input('Digite seu sexo ').lower()
-        if sexo in SEXO_FEMININO or sexo in SEXO_MASCULINO:
-            break
-        else:
-            print('RESPOSTA INVALIDA')
+    sexo = ' '
+    while sexo not in SEXO_FEMININO and SEXO_MASCULINO:
+        sexo = input('Digite seu sexo ').lower().strip()
 
     cont += 1
-    pergunta = input('Voce quer continuar S/N? ').upper()
+    pergunta = ' '
+    while pergunta not in 'SN':
+        pergunta = input('Voce quer continuar S/N? ').upper()
     if sexo in SEXO_MASCULINO:
         masc += 1
-    elif idade == 18:
+    elif idade >= 18:
         ida += 1
-    elif sexo in SEXO_FEMININO:
-        if idade<20:
-            fem += 1
+    elif sexo in SEXO_FEMININO and idade<20:
+        fem += 1
     else:
         print('resposta invalida')
     if pergunta == 'N':
