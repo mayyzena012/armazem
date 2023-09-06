@@ -7,7 +7,13 @@ while True:
     SEXO_MASCULINO = ('homem', 'm', 'masculino', 'h')
     SEXO_FEMININO = ('mulher', 'feminino', 'f')
     idade = int(input('Digite sua idade '))
-    sexo = input('Digite seu sexo ').lower()
+    while True:
+        sexo = input('Digite seu sexo ').lower()
+        if sexo in SEXO_FEMININO or sexo in SEXO_MASCULINO:
+            break
+        else:
+            print('RESPOSTA INVALIDA')
+
     cont += 1
     pergunta = input('Voce quer continuar S/N? ').upper()
     if sexo in SEXO_MASCULINO:
