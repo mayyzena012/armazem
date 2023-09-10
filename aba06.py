@@ -30,6 +30,7 @@ num.sort
 num.sort(reverse=True)
 num.insert(4,12)
 num.pop(1)
+num.remove(2)
 print(num)
 print(f'a lista tem {len(num)} elementos')
 
