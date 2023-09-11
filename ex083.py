@@ -4,8 +4,8 @@ galera = [['yuri',19],['mayra',20],['juliano',17]]
 print(galera[2][1])
 
 for p in galera:
-    print(p[0])
-    print(p[1])
+    print(f'nome {p[0]}')
+    print(f'idade {p[1]}')
 
 gal = list()
 dado = list()
@@ -16,13 +16,14 @@ for a in range(0,3):
     gal.append(dado[:])
     dado.clear()
 
-print(galera)
+print(gal)
 totmai = 0
 totmen = 0
-for p in galera:
-    if p[1] >= 21:
-        print(p[0])
+for a in gal:
+    if a[1] >= 21:
+        print(f'pessoas com mais {a[0]} 21')
         totmai +=1
     else:
-        print(p[0])
+        print(f'{a[0]} pessoas com menos de 21')
         totmen = 0
+        
