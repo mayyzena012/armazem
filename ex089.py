@@ -1,14 +1,28 @@
 #
+
 lista = list()
-dado = list()
+
 while True:
-    dado.append(input('Digite o nome do aluno: '))
-    dado.append(float(input('Digite a primeira nota: ')))
-    dado.append(float(input('Digite a segunda nota: ')))
+    nome = (input('Digite o nome do aluno: '))
+    nota1 = (float(input('Digite a primeira nota: ')))
+    nota2 = (float(input('Digite a segunda nota: ')))
+    media = (nota1 + nota2) / 2
+    lista.append([nome,[nota1,nota2], media])
     c = input('Voce quer continuar [S/N]? ').upper()[0]
-    lista.append(dado[:])
-    dado.clear()
     if c == 'N':
         break
-print(lista[0][1]+lista[0][2])
+
+for p, a in enumerate(lista):
+    print(f'{p:<2} {a[0]:.<30}Media: {a[2]}')
+
+
+while True:
+    o = int(input('Digite o numero do aluno q vc quer: (999 interrompe) '))
+    if o == 999:
+        break
+    if o <=len(lista) - 1:
+        print(f'nome {lista[o][0]} notas {lista[o][1]}')
+
+
 print(lista)
+
