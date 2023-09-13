@@ -11,6 +11,9 @@ print(pessoas.keys())
 print(pessoas.values())
 print(pessoas.items())
 
+pessoas['nome'] = 'Leandro'
+pessoas['peso'] = 65
+
 for k in pessoas.keys():
     print(k)
 
