@@ -19,3 +19,15 @@ for k in pessoas.keys():
 
 for k,i in pessoas.items():
     print(f'{k} = {i}')
+
+pessoas.copy()
+
+estado = dict()
+brasil = list()
+for c in range(0,3):
+    estado['uf'] = str(input('unidade federativa: '))
+    estado['silga'] = str(input('sigla do estado: '))
+    brasil.append(estado.copy())
+for e in brasil:
+    for k, v in e.items():
+        print(f'{k} = {v}')
