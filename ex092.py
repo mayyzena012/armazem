@@ -12,10 +12,20 @@ cadastro['idade'] = idade
 
 cadastro['carteira'] = int(input('N Carteira de Trabalho: '))
 if cadastro['carteira'] != 0:
-    cadastro['contrato'] = int(input('Ano de contratacao: '))
+    ano_cadastro = int(input('Ano de contratacao: '))
+    cadastro['contrato'] = ano_cadastro
+    aposentadoria = ano_cadastro + 35
+    aposentadoria_idade = aposentadoria - nasc
+    cadastro['aposentadoria'] = aposentadoria_idade
     cadastro['salario'] = int(input('Salario: '))
+    print(aposentadoria_idade)
+    print(aposentadoria)
 else:
-    print('sabonte')
+    print('Programa encerrado. Usuario nao possui carteira de trabalho.')
 
-con = 2023 - cadastro['contrato'] 
-print(cadastro)
+print(f'Nome: {cadastro["nome"]} com idade de {cadastro["idade"]} anos')
+print(f'CTPS numero: {cadastro["carteira"]} contratado pela primeira vez em {cadastro["contrato"]}')
+print(f'Com salario de: {cadastro["salario"]}')
+print(f'Se aposentara em {aposentadoria} com {cadastro["aposentadoria"]} anos')
+
+
