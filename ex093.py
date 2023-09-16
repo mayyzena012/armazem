@@ -1,4 +1,4 @@
-#
+#adsadasdasdada
 
 jogador = dict()
 gols = list()
@@ -9,7 +9,9 @@ jogador['partidas'] = partidas
 
 
 for n in range(partidas):
-    gols = int(input(f'quantos gols na partida {n}? '))
+    gols.append(int(input(f'quantos gols na partida {n}? ')))
+    jogador['gols'] = gols
 
 
 print(jogador)
+print(gols)
