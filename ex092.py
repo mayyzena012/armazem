@@ -5,21 +5,24 @@ cadastro = dict()
 print('-='*25)
 print('{:^50}'.format('CADASTRO PORTAL DO TRABALHADOR'))
 print('-='*25)
+
 cadastro['nome'] = str(input('Nome: '))
 nasc = int(input('Ano Nascimento: '))
+cadastro['carteira'] = int(input('N Carteira de Trabalho: '))
+
 idade = 2023 - nasc
 cadastro['idade'] = idade
 
-cadastro['carteira'] = int(input('N Carteira de Trabalho: '))
 if cadastro['carteira'] != 0:
     ano_cadastro = int(input('Ano de contratacao: '))
+
     cadastro['contrato'] = ano_cadastro
+
     aposentadoria = ano_cadastro + 35
     aposentadoria_idade = aposentadoria - nasc
+
     cadastro['aposentadoria'] = aposentadoria_idade
     cadastro['salario'] = int(input('Salario: '))
-    print(aposentadoria_idade)
-    print(aposentadoria)
 else:
     print('Programa encerrado. Usuario nao possui carteira de trabalho.')
 
