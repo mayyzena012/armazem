@@ -81,4 +81,5 @@ for a in gal:
     else:
         print(f'{a[0]} pessoas com menos de 21')
         totmen = 0
-        
+
+
