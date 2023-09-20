@@ -1,8 +1,10 @@
 #
 
 aluno = dict()
+
 aluno['nome'] = str(input('Digite o nome: ')).upper()
 aluno['media'] = float(input(f'Digite a media de {aluno["nome"]}: '))
+
 for k,v in aluno.items():
     print(f'{k} = {v}')
 
