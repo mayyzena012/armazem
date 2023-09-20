@@ -24,10 +24,10 @@ while True:
 
 
 print('-='*20)
-print('Cod nome gols total')
+print(f'{"cod nome":<} {"gols":^18} {"total":>}')
 print('-'*30)
-for posicao,jogador in enumerate(registro):
-    print(f' {posicao:<2} {jogador["nome"]:<5} {jogador["gols"]}')
+for joga in range(0, len(registro)):
+    print(f' {joga:<2} {registro[joga]["nome"]:<5} {registro[joga]["gols"]:<5} {registro[joga]["total gols"]:<5}')
 print('-'*30)
 
 while True:
