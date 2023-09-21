@@ -24,26 +24,28 @@ while True:
         break
 
 print('-='*20)
-print(f'{"cod nome":<} {"gols":^18} {"total":>}')
-print('-'*40)
-for joga in range(0, len(registro)):
-    print(f'{joga} {str(registro[joga]["nome"]):<5} {registro[joga]["gols"]:>6}  ')
-print('-'*40)
+print('cod ', end='')
+for chave in jogador.keys():
+    print(f'{chave:<13}', end ='')
+print()
+print('-'*50)
+for key, valor in enumerate(registro):
+    print(f'{key:<3}', end= '')
+    for valo in valor.values():
+        print(f'{str(valo):<13}', end='')
+    print()
+print('-'*50)
 
 while True:
     escolha = ' '
     escolha = int(input('Qual jogador voce quer ver? '))
     
-    if escolha <= len(registro) - 1:
-        #socorro
-        print('socorro')
-
-        for partida, golz in enumerate():
-            print(f'No jogo {partida} fez {golz}')
-    else:
-        print('numero invalido')
-
     if escolha == 999:
         break
-
+    if escolha >= len(registro):
+        print('ERRO. Nao tem esse jogador')
+    else:
+        print(f'DADOS DO JOGADOR {registro[escolha]["nome"]}: ')
+        for partida, golz in enumerate(registro[escolha]['gols']):
+            print(f'        Na partida {partida} fez {golz} gols!')
 

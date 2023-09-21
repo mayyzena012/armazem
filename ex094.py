@@ -5,8 +5,8 @@ pessoa = {}
 lista_pessoas = []
 lista_mulheres = []
 pessoa_acima_idade = []
-#contador e a soma
-soma_idade = 0
+# a soma
+soma_idade= 0
 
 while True:
     pessoa['nome'] = input('Digite seu nome: ')
@@ -20,6 +20,7 @@ while True:
             print('Incorreto.')
 
     pessoa['idade'] = int(input('Digite sua idade: '))
+    soma_idade += pessoa['idade']
     
     continuar = input('Quer continuar? [S/N] ').upper()[0]
     lista_pessoas.append(pessoa.copy())
@@ -29,12 +30,8 @@ while True:
 
     if continuar == 'N':
         break
-
-for posicao in range(0,len(lista_pessoas)):
-    idades = lista_pessoas[posicao]['idade']
-    soma_idade += idades
-    media = int(soma_idade / len(lista_pessoas))
-              
+    
+media = soma_idade / len(lista_pessoas)
 # 1 - encontre a media da idade do grupo
 print(f'A media da idade das pessoas e {media}')
 print('-='*40)

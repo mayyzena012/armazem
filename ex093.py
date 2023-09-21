@@ -10,7 +10,7 @@ jogador['partidas'] = partidas
 total = 0
 for numero_partida in range(partidas):
     gols.append(int(input(f'quantos gols na partida {numero_partida}? ')))
-    jogador['gols'] = gols
+    jogador['gols'] = gols[:]
 
 for gol in gols:
     total += gol
