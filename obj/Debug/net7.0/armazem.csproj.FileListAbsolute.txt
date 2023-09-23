@@ -1,0 +1,4 @@
+C:\Users\mayra\OneDrive\Documentos\armazem\obj\Debug\net7.0\armazem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mayra\OneDrive\Documentos\armazem\obj\Debug\net7.0\armazem.AssemblyInfoInputs.cache
+C:\Users\mayra\OneDrive\Documentos\armazem\obj\Debug\net7.0\armazem.AssemblyInfo.cs
+C:\Users\mayra\OneDrive\Documentos\armazem\obj\Debug\net7.0\armazem.csproj.CoreCompileInputs.cache
