@@ -7,14 +7,8 @@ namespace armazem
     {
         static void Main(string[] args)
         {   
-            int n;
-            Console.WriteLine("Digite um numero ");
-            n = int.Parse(Console.ReadLine());
-
-            
-
-
-
+        
+        
 
         }
 
