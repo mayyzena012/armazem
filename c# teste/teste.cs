@@ -1,25 +1,27 @@
+using System;
+using System.Diagnostics.Contracts;
 
-
-internal class Program
+namespace armazem
 {
-    private static void Main(string[] args)
+    class Program
     {
-        {
+        static void Main(string[] args)
+        {   
+            int n;
+            Console.WriteLine("Digite um numero ");
+            n = int.Parse(Console.ReadLine());
 
-            static void Main(string[] args)
             
-            int b, a;
-            Console.Write("escreva a base: ");
-            b = int.Parse(Console.Readline());
 
-            Console.Write("Escreva a altura: ");
-            a = int.Parse(Console.Readline());
 
-            string area = b * a;
 
-            Console.Write(area)
+
+        }
+
+
+
 
 
     }
-    }
+
 }
