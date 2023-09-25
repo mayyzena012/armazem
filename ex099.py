@@ -4,7 +4,7 @@ def maior(*args):
     maior = 0
     print(' valores passandos sao esses ', end = '')
     for valor in args:
-        print(f'{valor}', end='')
+        print(f'{valor}', end=' ')
     print(f' \n A  quantidade foi {len(args)}')
     if len(args) == 0:
         print(f'Maior {maior}')
