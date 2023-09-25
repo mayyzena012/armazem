@@ -44,3 +44,16 @@ def numeros(b):
 
 a = 5
 numeros(a)
+
+def par(n=0):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+    
+num = int(input('Digite um numero: '))
+print(par(num))
+if par(num):
+    print('e par')
+else:
+    print('e impar')
