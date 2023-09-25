@@ -1,12 +1,10 @@
 #
 
 def escreva(texto):
+    tamanho = len(texto) +4
+    print('-'*tamanho)
     print(texto)
-    linha = ('-'*30)
-    for letra in texto:
-        pass
-        while letra < linha:
-            print('sabonete')
+    print('-'*tamanho)
 
 
 escreva('SABONETE DA AVON')
