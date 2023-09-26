@@ -8,7 +8,10 @@ namespace armazem
         static void Main(string[] args)
         {   
         
-        
+        Console.WriteLine("hello");
+        String nome = Console.ReadLine();
+
+        Console.WriteLine("Hello, welcome " + nome);
 
         }
 
