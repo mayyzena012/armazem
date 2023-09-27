@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mayra\\OneDrive\\Documentos\\armazem\\armazem.csproj": {}
+    "C:\\Users\\mayra\\Documents\\GitHub\\armazem\\armazem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mayra\\OneDrive\\Documentos\\armazem\\armazem.csproj": {
+    "C:\\Users\\mayra\\Documents\\GitHub\\armazem\\armazem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mayra\\OneDrive\\Documentos\\armazem\\armazem.csproj",
+        "projectUniqueName": "C:\\Users\\mayra\\Documents\\GitHub\\armazem\\armazem.csproj",
         "projectName": "armazem",
-        "projectPath": "C:\\Users\\mayra\\OneDrive\\Documentos\\armazem\\armazem.csproj",
+        "projectPath": "C:\\Users\\mayra\\Documents\\GitHub\\armazem\\armazem.csproj",
         "packagesPath": "C:\\Users\\mayra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mayra\\OneDrive\\Documentos\\armazem\\obj\\",
+        "outputPath": "C:\\Users\\mayra\\Documents\\GitHub\\armazem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mayra\\AppData\\Roaming\\NuGet\\NuGet.Config"
