@@ -1,5 +1,11 @@
 #socorro
 def notas(*notas,situ=False):
+    """
+    -> Função para analisar notas e situações de alunos.
+    :parem notas: recebe uma ou mais notas
+    :parem situ: serve pra saber se quer que a situacao do aluno seja mostrada
+    :return: vai retornar as informacoes sobre as notas
+    """
     nota = {}
     nota['tam'] = len(notas)
     nota['maior_nota'] = max(notas)

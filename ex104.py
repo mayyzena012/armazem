@@ -1,16 +1,17 @@
 #
 def leiaInt(num):
-    is_ok = False
+    ok = False
     value = None
     while True:
-        numero = input(f'{num}')
-        if num.isnumeric():
-            value = numero
-            is_ok = True
+        n = input(num)
+        if n.isnumeric():
+            valor = int(n)
+            ok = True
         else:
-            print('Digite um numero inteiro')
-        if is_ok:
+            print('Digite um valor inteiro')
+        if ok:
             break
-    return value
+    return valor
 
 n = leiaInt('Digite um numero')
+print(f'voce digitou o numero {n}')
