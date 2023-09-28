@@ -27,10 +27,12 @@ def metade(value,show=True):
 def raio_moedizador(value,moeda="R$"):
     return f"{moeda}{value:.2f}".replace(".",",")
 
-def resumo(value, aumento, diminui):
-    print('-'*30)
-    print(f"Preco analisado:{raio_moedizador(value):>12}")
-    print(f"Dobro do preco:{dobro(value):>12}")
-    print(f"Metade do preco:{metade(value):>12}")
-    print(f"{aumento} de aumento:{aumentar(value, aumento):>12}")
-    print(f"{diminui} de reducao:{diminuir(value,diminui):>12}")
+def leiaDinheiro(enter):
+    validacao = False
+    while not validacao:
+        entrada = input(enter).replace(",",".")
+        if entrada.isalpha() or entrada == " ":
+            print(f"\033[31m{entrada} nao e valido, digite um valor\033[33m")
+        else:
+            validacao = True
+            return float(entrada)

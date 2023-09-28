@@ -1,8 +1,9 @@
 #107, 108, 109, 110, 111
-import moeda
+import moedas
+import dado
 #programa principal
-valor = float(input("Digite um valor R$: "))
-moeda.resumo(valor, 10, 13)
+valor = dado.leiaDinheiro("Digite um valor R$: ")
+moedas.resumo(valor, 10, 13)
 
 #exercicios anteriores/ 107, 108 e 109
 '''''
