@@ -18,6 +18,15 @@ def leiaInt(enter):
         except KeyboardInterrupt:
             print("\n O usuario não escolheu nada")
             return 4
+
+def leiaNome(enter):
+    try:
+        entrada = str(input(enter))
+    except ValueError:
+        print("ERRO. Digite um nome valido")
+    except KeyboardInterrupt:
+        print("Erro")
+
         
 
 def criarArquivo():
@@ -37,12 +46,16 @@ def lerArquivo():
     except:
         print("ERRO ao abrir o arquivo")
 
+def escreverArquiv():
+    try:
+        arquivo = open(arq, "wt")
+    except:
+        print("ERRO ao escrever no arquivo")
+
 def opcoes(lista):
     for posicao, objeto in enumerate(lista):
         print(f"{posicao + 1} - {objeto}")
-    print(linha())
     escolha = leiaInt("Sua opcão: ")
-    print(linha())
     return escolha
 
     
