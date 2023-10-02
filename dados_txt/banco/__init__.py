@@ -26,8 +26,12 @@ def leiaNome(enter):
         print("ERRO. Digite um nome valido")
     except KeyboardInterrupt:
         print("Erro")
+    arquivo = open(arq, "w")
+    arquivo.write(entrada)
+    arquivo.close()
+    return entrada
 
-        
+       
 
 def criarArquivo():
     try:
