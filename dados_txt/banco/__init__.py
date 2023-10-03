@@ -1,3 +1,5 @@
+from time import sleep
+
 arq = "dados_txt/banco/cadastro.txt"
 
 def linha(tam = 40):
@@ -26,16 +28,29 @@ def leiaNome(enter):
         print("ERRO. Digite um nome valido")
     except KeyboardInterrupt:
         print("Erro")
-    arquivo = open(arq, "w")
-    arquivo.write(entrada)
+    arquivo = open(arq, "a")
+    arquivo.writelines(f"\n {entrada}")
     arquivo.close()
     return entrada
 
+def leiaIdade(enter):
+    try:
+        entrada = int(input(enter))
+    except:
+        print("ERRO. Digie um valor valido")
+    try:
+        idade = str(entrada)
+        arquivo = open(arq, "a")    
+        arquivo.write(f" {idade:>10} anos")
+        #return idade
+    except:
+        print("Erro. Invalido")
        
 
 def criarArquivo():
     try:
         arquivo = open(arq,"wt+")
+        sleep(1)
         print("Arquivo criado com sucesso")
         arquivo.close()
     except:
@@ -45,6 +60,7 @@ def lerArquivo():
     try: 
         arquivo = open(arq, "rt")
         cabeca("PESSOAS CADASTRADAS")
+        sleep(0.5)
         lista = arquivo.read()
         return lista
     except:
